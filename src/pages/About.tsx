@@ -45,10 +45,8 @@ const About: React.FC = () => {
             </div>
             <div className="about-image">
               <div className="image-container">
-                <img src="./profil.jpg" 
-                    alt="Naureen Syed" 
-                    className="profile-image"
-                />
+                <img src="/profil.jpg" alt="Naureen Syed" className="profile-image" />
+
                 <div className="image-overlay"></div>
               </div>
             </div>

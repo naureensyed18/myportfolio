@@ -7,7 +7,7 @@ from datetime import datetime
 import smtplib
 from email.message import EmailMessage
 
-load_dotenv()  # Load .env for mail credentials
+
 
 app = Flask(__name__, static_folder='dist/assets', template_folder='dist')
 CORS(app)
