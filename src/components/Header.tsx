@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Sun, Moon, Menu, X } from 'lucide-react';
+import { Sun, Moon, Menu, X, FileText } from 'lucide-react';
 import { useTheme } from './Theme';
 import './Header.css';
 
@@ -59,6 +59,15 @@ const Header: React.FC = () => {
             >
               {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
             </button>
+            <a
+              href="/naureen_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume-button"
+            >
+              <FileText size={20} />
+              <span>Resume</span>
+            </a>
           </div>
         </div>
       </nav>
