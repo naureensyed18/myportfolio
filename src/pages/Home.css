@@ -20,7 +20,6 @@
   background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
 }
 
-/* Animated stars background */
 .stars,
 .stars2,
 .stars3 {
@@ -32,7 +31,8 @@
   background: transparent;
 }
 
-.stars {
+/* DARK MODE stars background */
+body.dark .stars {
   background-image: 
     radial-gradient(2px 2px at 20px 30px, var(--accent-color), transparent),
     radial-gradient(2px 2px at 40px 70px, var(--accent-color), transparent),
@@ -45,7 +45,7 @@
   opacity: 0.3;
 }
 
-.stars2 {
+body.dark .stars2 {
   background-image: 
     radial-gradient(1px 1px at 40px 60px, var(--accent-color), transparent),
     radial-gradient(1px 1px at 120px 50px, var(--accent-color), transparent),
@@ -56,7 +56,7 @@
   opacity: 0.2;
 }
 
-.stars3 {
+body.dark .stars3 {
   background-image: 
     radial-gradient(1px 1px at 60px 80px, var(--accent-color), transparent),
     radial-gradient(1px 1px at 180px 40px, var(--accent-color), transparent);
@@ -65,6 +65,32 @@
   animation: zoom 40s infinite;
   opacity: 0.1;
 }
+
+/* LIGHT MODE stars background */
+body.light .stars {
+  background-image: radial-gradient(2px 2px at 25% 30%, #022577 100%, transparent 0%);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+  animation: zoom 20s infinite;
+  opacity: 0.3;
+}
+
+body.light .stars2 {
+  background-image: radial-gradient(1.5px 1.5px at 70% 50%, #022577  100%, transparent 0%);
+  background-repeat: repeat;
+  background-size: 300px 150px;
+  animation: zoom 30s infinite;
+  opacity: 0.2;
+}
+
+body.light .stars3 {
+  background-image: radial-gradient(1px 1px at 50% 70%, #022577  100%, transparent 0%);
+  background-repeat: repeat;
+  background-size: 400px 200px;
+  animation: zoom 40s infinite;
+  opacity: 0.1;
+}
+
 
 @keyframes zoom {
   0% {
