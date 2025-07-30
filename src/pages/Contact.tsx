@@ -121,7 +121,7 @@ const Contact: React.FC = () => {
                   <Github size={24} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/naureen-syed-574a33212/"
+                  href="https://www.linkedin.com/in/naureensyed18/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-link"
