@@ -112,7 +112,7 @@ const Contact: React.FC = () => {
               <h3>Connect With Me</h3>
               <div className="social-icons">
                 <a
-                  href="https://github.com/naureensyed"
+                  href="https://github.com/naureensyed18"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-link"
@@ -121,7 +121,7 @@ const Contact: React.FC = () => {
                   <Github size={24} />
                 </a>
                 <a
-                  href="https://linkedin.com/in/naureensyed"
+                  href="https://www.linkedin.com/in/naureen-syed-574a33212/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-link"
