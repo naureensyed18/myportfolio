@@ -55,9 +55,9 @@ const Projects: React.FC = () => {
           id: 4,
           title: 'Portfolio Website',
           description: 'My personal portfolio built with React and Tailwind CSS.',
-          technologies: ['React', 'Tailwind CSS'],
+          technologies: ['React', 'Tailwind CSS','Python','Flask', 'Netlify Functions'],
           github: 'https://github.com/naureensyed18/myportfolio',
-          demo: 'https://naureensyed.netlify.app',
+          demo: '#',
           image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80',
         },
 
