@@ -59,15 +59,9 @@ const Header: React.FC = () => {
             >
               {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
             </button>
-            <a
-              href="/naureen_resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="resume-button"
-            >
-              <FileText size={20} />
-              <span>Resume</span>
-            </a>
+            <Link to="/Resume.pdf" className="btn btn-primary">
+                              Resume
+                            </Link>
           </div>
         </div>
       </nav>
