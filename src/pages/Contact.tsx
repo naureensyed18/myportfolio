@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Send, Github, Linkedin, } from 'lucide-react';
+import { Mail, MapPin, Send, Github, Linkedin, FileText } from 'lucide-react';
 import './Contact.css';
 
 interface FormData {
@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
           subject: '',
           message: ''
         });
-        
+
         // Redirect to home page after 2 seconds
         setTimeout(() => {
           window.location.href = '/';
@@ -105,7 +105,7 @@ const Contact: React.FC = () => {
                 </div>
               </div>
 
-              
+
             </div>
 
             <div className="social-links">
@@ -129,7 +129,16 @@ const Contact: React.FC = () => {
                 >
                   <Linkedin size={24} />
                 </a>
-                
+                <a
+                  href="/Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                  aria-label="Resume"
+                >
+                  <FileText size={24} />
+                </a>
+
               </div>
             </div>
           </div>
@@ -238,7 +247,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        
+
       </div>
     </div>
   );
