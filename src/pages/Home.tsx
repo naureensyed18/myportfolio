@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import {  Code, Database, Globe } from 'lucide-react';
+import { Code, Database, Globe } from 'lucide-react';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -59,11 +59,19 @@ const Home: React.FC = () => {
               </p>
               <div className="hero-actions">
                 <Link to="/projects" className="btn btn-primary">
-                  View My Work 
+                  View My Work
                 </Link>
                 <Link to="/contact" className="btn btn-primary">
                   Get In Touch
                 </Link>
+                <a
+                  href="/Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  Resume
+                </a>
               </div>
             </div>
           </div>
@@ -129,7 +137,7 @@ const Home: React.FC = () => {
                 <span className="tech-tag">PostgreSQL</span>
                 <span className="tech-tag">MySQL</span>
                 <span className="tech-tag">SQLite</span>
-                
+
               </div>
             </div>
             <div className="tech-category">
@@ -154,7 +162,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      
+
     </div>
   );
 };
