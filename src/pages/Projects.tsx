@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import './Projects.css';
+import { Link } from 'react-router-dom';
 
 interface Project {
   id: number;
@@ -202,13 +203,13 @@ const Projects: React.FC = () => {
               I'm always open to discussing new opportunities and interesting projects.
               Let's connect and see how we can collaborate.
             </p>
-            <a
-              href="/contact"
-              className="btn btn-primary"
-              style={{ backgroundColor: '#2563eb', color: '#fff' }}
-            >
-              Get In Touch
-            </a>
+            <Link
+  to="/contact"
+  className="btn btn-primary"
+  style={{ backgroundColor: '#2563eb', color: '#fff' }}
+>
+  Get In Touch
+</Link>
           </div>
         </section>
       </div>
